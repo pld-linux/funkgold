@@ -34,14 +34,13 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/funktracker}
 install funkgold $RPM_BUILD_ROOT%{_bindir}
 install Songs/* $RPM_BUILD_ROOT%{_libdir}/funktracker
 
-gzip -9nf DEVELOPERS.README FORMAT.FunktrackerGOLD FORMAT.Protracker \
-	TODO WHATS-NEW
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc DEVELOPERS.README FORMAT.FunktrackerGOLD FORMAT.Protracker \
+	TODO WHATS-NEW
 %attr(755,root,root) %{_bindir}/funkgold
 %{_libdir}/funktracker
