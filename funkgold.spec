@@ -10,7 +10,7 @@ Patch0:		funkgold.patch
 Patch1:		funkgold-megaloman.patch
 URL:		http://www.downunder.net.au/~jsno/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-ExclusiveArch:	i386 
+ExclusiveArch:	i386
 
 %description
 Mod tracking program.
