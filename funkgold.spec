@@ -1,10 +1,14 @@
-Summary:	FNK/MOD Editor; Sound file editor
+Summary:	FNK/MOD sound file (module) editor
+Summary(pl):	Edytor plików d¼wiêkowych (modu³ów) FNK/MOD
 Name:		FunktrackerGOLD
 Version:	1.5
 Release:	2
 License:	GPL
 Group:		Applications/Sound
+Group(de):	Applikationen/Laut
+Group(es):	Aplicaciones/Sonido
 Group(pl):	Aplikacje/D¼wiêk
+Group(pt_BR):	Aplicações/Som
 Source0:	http://www.downunder.net.au/~jsno/rel/unix_projects/funktrackergold-%{version}.tgz
 Patch0:		funkgold.patch
 Patch1:		funkgold-megaloman.patch
@@ -13,20 +17,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ExclusiveArch:	i386 
 
 %description
-Mod tracking program. This is the only working MOD tracker available
-for Linux at this time.
+Mod tracking program.
 
 %description -l pl
-Tracker plików MOD. Jest to jedyny obecnie istniej±cy MOD tracker dla
-Linuksa.
+Edytor (tracker) do plików MOD i FNK.
 
 %prep
 %setup -q -n funkgold
-%patch0 -p1 -b .asm
-%patch1 -p1 -b .megaloman
+%patch0 -p1
+%patch1 -p1
 
 %build
-
 %{__make} clean
 %{__make}
 
