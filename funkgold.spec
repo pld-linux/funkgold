@@ -8,7 +8,7 @@ Source:		http://www.downunder.net.au/~jsno/rel/unix_projects/funktrackergold-%{v
 Patch0:		funkgold.patch
 Patch1:		funkgold-megaloman.patch
 URL:		http://www.downunder.net.au/~jsno/
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ExclusiveArch:	i386 
 
 %description
@@ -27,7 +27,6 @@ Tracker plików MOD. Jest to jedyny obecnie istniej±cy MOD tracker dla Linuksa.
 
 make clean
 make
-
 
 %install
 rm -rf $RPM_BUILD_ROOT
