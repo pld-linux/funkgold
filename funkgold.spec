@@ -34,7 +34,7 @@ Linuksa.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/funktracker}
 
-install -s funkgold $RPM_BUILD_ROOT%{_bindir}
+install funkgold $RPM_BUILD_ROOT%{_bindir}
 install Songs/* $RPM_BUILD_ROOT%{_libdir}/funktracker
 
 gzip -9nf DEVELOPERS.README FORMAT.FunktrackerGOLD FORMAT.Protracker \
