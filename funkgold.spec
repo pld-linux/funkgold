@@ -5,10 +5,6 @@ Version:	1.5
 Release:	2
 License:	GPL
 Group:		Applications/Sound
-Group(de):	Applikationen/Laut
-Group(es):	Aplicaciones/Sonido
-Group(pl):	Aplikacje/D¼wiêk
-Group(pt_BR):	Aplicações/Som
 Source0:	http://www.downunder.net.au/~jsno/rel/unix_projects/funktrackergold-%{version}.tgz
 Patch0:		funkgold.patch
 Patch1:		funkgold-megaloman.patch
