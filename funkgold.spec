@@ -27,7 +27,7 @@ Linuksa.
 
 %build
 
-make clean
+%{__make} clean
 make
 
 %install
