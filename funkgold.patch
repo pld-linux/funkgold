@@ -1,0 +1,10 @@
+--- funkgold/funkgold_dir.c.orig	Thu Aug 20 15:45:36 1998
++++ funkgold/funkgold_dir.c	Thu Aug 20 15:46:15 1998
+@@ -29,6 +29,7 @@
+ #include "funkgold_sm.h"
+ #include "funkgold_pe.h"
+ #include "funkgold.h"
++#include "asm/types.h"
+ 
+ typedef struct _tdir_entry
+ {

@@ -1,0 +1,32 @@
+diff -uNr funkgold/Makefile funkgold.new/Makefile
+--- funkgold/Makefile	Mon Jun 22 06:54:17 1998
++++ funkgold.new/Makefile	Sun May  9 12:37:09 1999
+@@ -25,16 +25,28 @@
+ ifeq ($(HOSTTYPE),i386)
+   HOST_SAFE = 1
+ endif
++ifeq ($(HOSTTYPE),i386-linux)
++  HOST_SAFE = 1
++endif
+ 
+ ifeq ($(HOSTTYPE),i486)
+   HOST_SAFE = 1
+ endif
++ifeq ($(HOSTTYPE),i486-linux)
++  HOST_SAFE = 1
++endif
+ 
+ ifeq ($(HOSTTYPE),i586)
+   HOST_SAFE = 1
+ endif
++ifeq ($(HOSTTYPE),i586-linux)
++  HOST_SAFE = 1
++endif
+ 
+ ifeq ($(HOSTTYPE),i686)
++  HOST_SAFE = 1
++endif
++ifeq ($(HOSTTYPE),i686-linux)
+   HOST_SAFE = 1
+ endif
+ 
