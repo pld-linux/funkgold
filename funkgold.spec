@@ -15,6 +15,9 @@ ExclusiveArch:	i386
 Mod tracking program.  This is the only working MOD tracker available for Linux
 at this time.
 
+%description -l pl
+Tracker plików MOD. Jest to jedyny obecnie istniej±cy MOD tracker dla Linuksa.
+
 %prep
 %setup -q -n funkgold
 %patch0 -p1 -b .asm
