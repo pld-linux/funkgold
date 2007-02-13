@@ -1,5 +1,5 @@
 Summary:	FNK/MOD sound file (module) editor
-Summary(pl.UTF-8):   Edytor plików dźwiękowych (modułów) FNK/MOD
+Summary(pl.UTF-8):	Edytor plików dźwiękowych (modułów) FNK/MOD
 Name:		FunktrackerGOLD
 Version:	1.5
 Release:	2
